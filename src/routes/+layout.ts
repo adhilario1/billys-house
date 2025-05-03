@@ -5,7 +5,8 @@ export const load: LayoutLoad = () => {
         sections: [
             {slug: '', title: 'home.'},
             {slug: 'demo', title: 'demos.'},
-            {slug: 'about', title: 'about.'}
+            {slug: 'about', title: 'about.'},
+            {slug: 'test', title: 'test'}
         ]
     };
 };
