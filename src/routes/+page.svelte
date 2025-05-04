@@ -1,29 +1,21 @@
 <script>
     import './../app.css';
     import Card from '$lib/Card.svelte';
-    
+    import Header from '$lib/Header.svelte'
 </script>
 
 
-{#each Array(3) as parentItem}
-<Card horizontal={true}>
-    <h1 class="text-3xl font-bold">Welcome to SvelteKit</h1>
-    <p class="test">Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<Card >
+    <Header />
+    <div class="flex flex-col justify-center text-red-50 m-10 font-mono">
+        <h1 class="text-9xl">billy's house</h1>
+        <p class="m-5">a collection of my work, education, and general interest projects</p>
+    </div>
     
-    {#each Array(3) as item}
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      </p>
-    {/each}
 </Card>
-{/each}
-<style>
-    parentItem {
-        padding: 25px;
-    }
-</style>
+
+<Card alpha="0">
+    <p>test</p>
+</Card>
 
 

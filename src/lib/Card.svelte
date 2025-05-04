@@ -1,8 +1,8 @@
 <script>
-    let { horizontal=false, children } = $props();
+    let { color="emerald", intensity="950", alpha="100", horizontal=false, children } = $props();
 </script>
 
-<div class="card {horizontal}">
+<div class="flex justify-center bg-{color}-{intensity}/{alpha} card {horizontal}">
     <div class='content'>
         {@render children()}
     </div>
@@ -12,20 +12,24 @@
 
 <style>
     .card {
-        display: block;
-        border-radius: 25px;
-        max-height: 90vh;
-        width: 90vw;
+        border-radius: 10px;
+        height: 98vh;
+        width: 99vw;
         overflow-y: scroll;
         overflow-x: auto;
-        background-color: #fff;
         margin: 1vh auto;
         color: black;
+        
     }
 
     .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
         margin: 10px;
         text-align: center;
+        align-items: center;
     }
     .horizontal {
         overflow-y: auto;

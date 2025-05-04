@@ -54,6 +54,7 @@
 
 <svelte:window bind:scrollY={y} />
 
+<!--
 {#if y>=208}
     {console.log("switch: " + y)}
     <nav class:expanded={open}>
@@ -89,23 +90,22 @@
 {:else}
     
 
-    <div class="bg-emerald-950 max-h-52">
+    <div class="bg-emerald-50 max-h-52">
         <div class="flex justify-center items-center font-serif">
-            <h1 class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl text-red-50">Adam</h1>
             <svg width="100%" height="100%" 
                 viewBox="0 0 1080 1080" 
                 version="1.1" 
                 xmlns="http://www.w3.org/2000/svg" 
                 xmlns:xlink="http://www.w3.org/1999/xlink" 
                 xml:space="preserve"  
-                class="bg-none fill-none stroke-sky-50 stroke-40 size-40 margin-auto" 
+                class="bg-none fill-none stroke-red-50 stroke-40 size-40 margin-auto p-2" 
                 style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
             >
                 <circle cx="540" cy="540" r="500"/><g id="Layer1">
                 <path d="M787.674,974.302l-483.139,-866.86l-13.954,840.697c7.422,-350.651 293.355,-475.987 729.21,-472.674l-958.105,1.814"/>
                 <path d="M491.163,49.884l457.116,770.79" /></g>
             </svg>
-            <h1 class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl text-red-50">Hilario</h1>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-red-50">Adam<br>Hilario</h1>
         </div>
         
         <div class="flex flex-row">
@@ -263,5 +263,5 @@
     }
     
 </style>
-
+-->
 {@render children()}
