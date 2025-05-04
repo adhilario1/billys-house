@@ -2,12 +2,18 @@
     let { color="emerald", intensity="950", alpha="100", horizontal=false, children } = $props();
 </script>
 
+<div class="flex justify-center bg-emerald-{intensity}/{alpha} card {horizontal}">
+    <div class='content'>
+        {@render children()}
+    </div>
+</div>
+<!--
 <div class="flex justify-center bg-{color}-{intensity}/{alpha} card {horizontal}">
     <div class='content'>
         {@render children()}
     </div>
 </div>
-
+-->
 
 
 <style>

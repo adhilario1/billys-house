@@ -5,7 +5,7 @@
 </script>
 
 
-<Card alpha="100">
+<Card >
     <Header />
     <div class="flex flex-col justify-center text-red-50 m-10 font-mono">
         <h1 class="text-9xl">billy's house</h1>
