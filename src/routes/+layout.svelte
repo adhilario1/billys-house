@@ -54,7 +54,7 @@
 
 <svelte:window bind:scrollY={y} />
 
-{#if y>(windowHeight/2)}
+{#if y>=208}
     {console.log("switch: " + y)}
     <nav class:expanded={open}>
         <button class="nav-button" onclick={() => open = !open}>
@@ -89,9 +89,26 @@
 {:else}
     
 
-    <div class="static-header">
-        <span class="logo"></span>
-        <div>
+    <div class="bg-emerald-950 max-h-52">
+        <div class="flex justify-center items-center font-serif">
+            <h1 class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl text-red-50">Adam</h1>
+            <svg width="100%" height="100%" 
+                viewBox="0 0 1080 1080" 
+                version="1.1" 
+                xmlns="http://www.w3.org/2000/svg" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                xml:space="preserve"  
+                class="bg-none fill-none stroke-sky-50 stroke-40 size-40 margin-auto" 
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
+            >
+                <circle cx="540" cy="540" r="500"/><g id="Layer1">
+                <path d="M787.674,974.302l-483.139,-866.86l-13.954,840.697c7.422,-350.651 293.355,-475.987 729.21,-472.674l-958.105,1.814"/>
+                <path d="M491.163,49.884l457.116,770.79" /></g>
+            </svg>
+            <h1 class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl text-red-50">Hilario</h1>
+        </div>
+        
+        <div class="flex flex-row">
         {#each data.sections as section}
         <div class="header-item">
             <a href="/{section.slug}">{section.title}</a>
@@ -150,11 +167,10 @@
     }
 
     .logo {
-        display: inline-block;
-        --svg: url("data:/logo.svg");
+        fill:#fff;
         color: #fff;
-        width: 50px;
-        height: 50px;
+        stroke: #fff;
+        
     }
 
     .menu-icon {
@@ -209,7 +225,7 @@
         width: 3vw;
         height: 3vw;
         --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M4 6h16V4H4zm7 14h2v-8h2v2h2v-2h-2v-2h-2V8h-2v2H9v2H7v2h2v-2h2z'/%3E%3C/svg%3E");
-        background-color: currentColor;
+        background-color: white;
         -webkit-mask-image: var(--svg);
         mask-image: var(--svg);
         -webkit-mask-repeat: no-repeat;

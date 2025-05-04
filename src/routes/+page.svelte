@@ -7,10 +7,10 @@
 
 {#each Array(3) as parentItem}
 <Card horizontal={true}>
-    <h1>Welcome to SvelteKit</h1>
+    <h1 class="text-3xl font-bold">Welcome to SvelteKit</h1>
     <p class="test">Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
     
-    {#each Array(50) as item}
+    {#each Array(3) as item}
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
